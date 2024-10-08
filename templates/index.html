@@ -1,0 +1,967 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>INFO COHORT</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='lib/animate/animate.min.css')}}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+                <link href="lib/animate/animate.min.css" rel="stylesheet">
+                <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+        <!-- Template Stylesheet -->
+        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+    </head>
+
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                    <div class="spinner-grow text-primary" role="status"></div>
+                </div> -->
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+                    <div class="container">
+                        <div class="d-flex justify-content-between topbar">
+                            <div class="top-info">
+                                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Ranking Street, New York</small>
+                                <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
+                            </div>
+                            <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+                            <div class="top-link">
+                                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
+                                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                                <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-block">Info<span style="color:#00ff84;">Cohort</span> </h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link active" style="color:#00ff84;">Home</a>
+                        <a href="#ABOUT" class="nav-item nav-link">About</a>
+                        <a href="#SERVICES" class="nav-item nav-link">Services</a>
+                        <!-- <a href="project.html" class="nav-item nav-link">Projects</a> -->
+                        <!-- <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                        <div class="dropdown-menu rounded">
+                                            <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                            <a href="team.html" class="dropdown-item">Our Team</a>
+                                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                            <a href="404.html" class="dropdown-item">404 Page</a>
+                                        </div>
+                                    </div> -->
+                        <a href="#CONTACT" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <!-- <div class="d-none d-xl-flex flex-shirink-0">
+                                <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                                    <a href="" class="position-relative animated tada infinite">
+                                        <i class="fa fa-phone-alt text-white fa-2x"></i>
+                                        <div class="position-absolute" style="top: -7px; left: 20px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column pe-4 border-end">
+                                    <span class="text-white-50">Have any questions?</span>
+                                    <span class="text-secondary">Call: + 0123 456 7890</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center ms-4 ">
+                                    <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                                </div>
+                            </div> -->
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div class="d-flex flex-column ">
+                        <a href="#CONTACTUS"> <button class="btn btn-light">Get in Touch</button></a>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active bg-" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                        </ol> -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='img/carousel-1.jpg')}}" style="filter: blur(2px);"
+                        width="100%" class="img-fluid" alt="First slide">
+                    <!-- <img src="img/carousel-1.jpeg" style="filter: blur(2px);" width="100%" class="img-fluid" alt="First slide"> -->
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h6 style="color: #00ff84;" class="h4 animated fadeInUp">Best IT Solutions</h6>
+                            <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency
+                                Here For You</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">Ready to take your digital presence to
+                                the next level? Contact us today to discuss how we can collaborate and bring your vision
+                                to fruition.</p>
+                            <!-- <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a> -->
+                            <a href="#CONTACT" class="ms-2"><button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact
+                                    Us</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='img/carousel-2.jpeg')}}" style="filter: blur(2px);"
+                        width="100%" class="img-fluid" alt="Second slide">
+                    <!-- <img src="img/carousel-2.jpeg"style="filter: blur(2px);" width="100%" class="img-fluid" alt="Second slide"> -->
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h4 style="color: #00ff84;" class="h3 animated fadeInUp">Best IT Solutions</h4>
+                            <h1 class="text-white display-1 mb-4 animated fadeInRight">Quality Digital Services You
+                                Really Need!</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">Ready to take your digital presence to
+                                the next level? Contact us today to discuss how we can collaborate and bring your vision
+                                to fruition.</p>
+                            <!-- <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a> -->
+                            <a href="#CONTACT" class="ms-2"><button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact
+                                    Us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Fact Start -->
+    <!-- <div class="container-fluid bg-secondary py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                                <div class="d-flex counter">
+                                    <h1 class="me-3 text-primary counter-value">99</h1>
+                                    <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                                <div class="d-flex counter">
+                                    <h1 class="me-3 text-primary counter-value">25</h1>
+                                    <h5 class="text-white mt-1">Thousands of successful business</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                                <div class="d-flex counter">
+                                    <h1 class="me-3 text-primary counter-value">120</h1>
+                                    <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                                <div class="d-flex counter">
+                                    <h1 class="me-3 text-primary counter-value">5</h1>
+                                    <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- Fact End -->
+
+
+    <!-- About Start -->
+    <hr style="color:aliceblue; background-color:white; margin: 0%; padding: 0%;">
+    <div class="container-fluid py-5 " id="ABOUT" style="background-image:url('{{ url_for('static', filename='img/OC1YA40.jpg')}}'); background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="h-100 position-relative">
+                        <img src="{{ url_for('static', filename='img/about-1.jpg')}}" class="img-fluid w-75 rounded"
+                            alt="" style="margin-bottom: 25%;">
+                        <!-- <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;"> -->
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                            <img src="{{ url_for('static', filename='img/about-2.jpg')}}"
+                                class="img-fluid w-100 rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <h3 style="color: #00ff84;">About Us</h3>
+                    <h1 class="mb-4 text-light">About HighTech Agency And It's Innovative IT Solutions</h1>
+                    <p class="text-white">Welcome to InfoCohort, your ultimate destination for unlocking the full
+                        potential of your digital presence! Founded in 2024, we're a dynamic startup fueled by passion,
+                        creativity, and a relentless drive for digital excellence.
+                        <br><br>
+                        At InfoCohort, we specialize in crafting captivating websites, designing seamless user
+                        experiences, and implementing results-driven digital marketing strategies. Our mission is
+                        simple: to empower businesses of all sizes to thrive in the ever-evolving digital landscape.
+
+                        With a team of seasoned professionals and a commitment to innovation, we're here to turn your
+                        digital dreams into reality. Whether you're looking to launch a stunning website, enhance your
+                        brand's online visibility, or drive conversions like never before, InfoCohort has the expertise
+                        and the dedication to make it happen.
+                        <br><br>
+                        Join us on this exciting journey as we embark on a digital adventure together. Let's build
+                        something extraordinary!
+                    </p>
+                    <!--<a href="#CONTACTUS" class="btn rounded-pill px-5 py-3 text-dark" style="background-color: #00ff84;">More Details</a>-->
+                </div>
+            </div>
+        </div>
+
+        <!-- About End -->
+
+        <!-- <hr style="color:aliceblue; background-color:white; margin: 0%; padding: 0%;"> -->
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 mb-2 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h3 id="SERVICES" style="color: #00ff84;">Our Services</h3><br>
+                    <h1 class="text-white">Services Built Specifically For Your Business</h1>
+                </div>
+                <div class="row g-5 services-inner">
+                    <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                                <div class="services-item bg-light">
+                                    <div class="p-4 text-center services-content">
+                                        <div class="services-content-icon">
+                                            <i class="fa fa-code fa-7x mb-4" style="color:#000000"></i>
+                                            <h4 class="mb-3" style="color: #00ff84;">Web Design</h4>
+                                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="services-item" style="background-color: #f8f8f921;">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-file-code fa-7x mb-4 text-dark"></i>
+                                    <h4 class="mb-3" style="color: #00ff84;">Web Development</h4>
+                                    <p class="mb-4 text-justify">
+                                        We specialize in crafting custom websites tailored to your brand, ensuring
+                                        optimal performance and user experience. Our services include custom
+                                        development, responsive design for all devices, e-commerce solutions to drive
+                                        sales, and user-friendly content management systems for easy website management.
+                                        With our expertise, dedication to quality, and collaborative approach, we'll
+                                        help elevate your online presence to new heights.
+
+                                    </p>
+                                    <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="services-item" style="background-color: #f8f8f921;">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-dark"></i>
+                                    <h4 class="mb-3" style="color: #00ff84;">UI/UX Design</h4>
+                                    <p class="mb-4">
+                                        Our UI/UX design services focus on creating exceptional user experiences that
+                                        captivate and engage your audience. From in-depth user research to wireframing,
+                                        visual design, and rigorous usability testing, we craft designs that are not
+                                        only visually stunning but also intuitive and user-friendly. With our creative
+                                        approach, collaborative mindset, and commitment to delivering results, we'll
+                                        help you elevate your digital presence and leave a lasting impression on your
+                                        users.
+                                    </p>
+                                    <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s"> -->
+                    <!-- <div class="services-item bg-light">
+                                    <div class="p-4 text-center services-content">
+                                        <div class="services-content-icon">
+                                            <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
+                                            <h4 class="mb-3">Web Cecurity</h4>
+                                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div> -->
+                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="services-item" style="background-color: #f8f8f921;">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-envelope-open fa-7x mb-4 text-dark"></i>
+                                    <h4 class="mb-3" style="color: #00ff84;">Digital Marketing</h4>
+                                    <p class="mb-4">In the ever-evolving digital landscape, our digital marketing
+                                        services are designed to help businesses thrive and succeed. We offer a
+                                        comprehensive range of solutions including search engine optimization (SEO),
+                                        social media marketing, pay-per-click (PPC) advertising, and content marketing.
+                                        Our team of experts combines industry knowledge with strategic insights to
+                                        deliver customized solutions tailored to your business goals and target
+                                        audience. </p>
+                                    <!-- <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                                <div class="services-item bg-light">
+                                    <div class="p-4 text-center services-content">
+                                        <div class="services-content-icon">
+                                            <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
+                                            <h4 class="mb-3">Programming</h4>
+                                            <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Services End -->
+
+
+        <!-- Project Start -->
+        <!-- <div class="container-fluid project py-5 mb-5">
+                    <div class="container">
+                        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                            <h3 style="color: #00ff84;">Our Project</h3>
+                            <h1>Our Recently Completed Projects</h1>
+                        </div>
+                        <div class="row g-5">
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">Web design</h4>
+                                                <p class="m-0 text-white">Web Analysis</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">Cyber Security</h4>
+                                                <p class="m-0 text-white">Cyber Security Core</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">Mobile Info</h4>
+                                                <p class="m-0 text-white">Upcomming Phone</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">Web Development</h4>
+                                                <p class="m-0 text-white">Web Analysis</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">Digital Marketing</h4>
+                                                <p class="m-0 text-white">Marketing Analysis</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                                <div class="project-item">
+                                    <div class="project-img">
+                                        <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="project-content">
+                                            <a href="#" class="text-center">
+                                                <h4 class="text-secondary">keyword Research</h4>
+                                                <p class="m-0 text-white">keyword Analysis</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- Project End -->
+
+
+        <!-- Blog Start -->
+        <!-- <div class="container-fluid blog py-5 mb-5">
+                    <div class="container">
+                        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                            <h5 style="color: #00ff84;">Our Blog</h5>
+                            <h1>Latest Blog & News</h1>
+                        </div>
+                        <div class="row g-5 justify-content-center">
+                            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                                <div class="blog-item position-relative bg-light rounded">
+                                    <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Web Design</span>
+                                    <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                        <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                            <a href="" class="btn text-white">Read More</a>
+                                        </div>
+                                        <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                            <div class="blog-icon-1">
+                                                <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                            </div>
+                                            <div class="blog-icon-2">
+                                                <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                        <h5 class="">By Daniel Martin</h5>
+                                        <span class="text-secondary">24 March 2023</span>
+                                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                    </div>
+                                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                        <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                        <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                                <div class="blog-item position-relative bg-light rounded">
+                                    <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Development</span>
+                                    <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                        <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                            <a href="" class="btn text-white ">Read More</a>
+                                        </div>
+                                        <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                            <div class="blog-icon-1">
+                                                <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                            </div>
+                                            <div class="blog-icon-2">
+                                                <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                        <h5 class="">By Daniel Martin</h5>
+                                        <span class="text-secondary">23 April 2023</span>
+                                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                    </div>
+                                    <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                        <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                        <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                                <div class="blog-item position-relative bg-light rounded">
+                                    <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                    <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Mobile App</span>
+                                    <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                        <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                            <a href="" class="btn text-white ">Read More</a>
+                                        </div>
+                                        <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                            <div class="blog-icon-1">
+                                                <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                            </div>
+                                            <div class="blog-icon-2">
+                                                <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                                <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                        <img src="img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                        <h5 class="">By Daniel Martin</h5>
+                                        <span class="text-secondary">30 jan 2023</span>
+                                        <p class="py-2">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt libero sit amet</p>
+                                    </div>
+                                    <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                        <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>5324 Share</small></a>
+                                        <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>5 Comments</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- Blog End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="container-fluid py-5 mb-5 team">
+                    <div class="container">
+                        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                            <h5 style="color: #00ff84;">Our Team</h5>
+                            <h1>Meet our expert Team</h1>
+                        </div>
+                        <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
+                            <div class="rounded team-item">
+                                <div class="team-content">
+                                    <div class="team-img-icon">
+                                        <div class="team-img rounded-circle">
+                                            <img src="img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                        </div>
+                                        <div class="team-name text-center py-3">
+                                            <h4 class="">Full Name</h4>
+                                            <p class="m-0">Designation</p>
+                                        </div>
+                                        <div class="team-icon d-flex justify-content-center pb-4">
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded team-item">
+                                <div class="team-content">
+                                    <div class="team-img-icon">
+                                        <div class="team-img rounded-circle">
+                                            <img src="img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                        </div>
+                                        <div class="team-name text-center py-3">
+                                            <h4 class="">Full Name</h4>
+                                            <p class="m-0">Designation</p>
+                                        </div>
+                                        <div class="team-icon d-flex justify-content-center pb-4">
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded team-item">
+                                <div class="team-content">
+                                    <div class="team-img-icon">
+                                        <div class="team-img rounded-circle">
+                                            <img src="img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                        </div>
+                                        <div class="team-name text-center py-3">
+                                            <h4 class="">Full Name</h4>
+                                            <p class="m-0">Designation</p>
+                                        </div>
+                                        <div class="team-icon d-flex justify-content-center pb-4">
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded team-item">
+                                <div class="team-content">
+                                    <div class="team-img-icon">
+                                        <div class="team-img rounded-circle">
+                                            <img src="img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
+                                        </div>
+                                        <div class="team-name text-center py-3">
+                                            <h4 class="">Full Name</h4>
+                                            <p class="m-0">Designation</p>
+                                        </div>
+                                        <div class="team-icon d-flex justify-content-center pb-4">
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-fluid testimonial py-5">
+                    <div class="container">
+                        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                            <h3 style="color: #00ff84;">Our Testimonial</h3>
+                            <h1 class="text-light">Our Client Saying!</h1>
+                        </div>
+                        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+                            <div class="testimonial-item border p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="">
+                                        <img src="img/testimonial-1.jpg" alt="">
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4 class="text-dark">Client Name</h4>
+                                        <p class="m-0 pb-3">Profession</p>
+                                        <div class="d-flex pe-5">
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-3">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item border p-4">
+                                <div class=" d-flex align-items-center">
+                                    <div class="">
+                                        <img src="img/testimonial-2.jpg" alt="">
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4 class="text-dark">Client Name</h4>
+                                        <p class="m-0 pb-3">Profession</p>
+                                        <div class="d-flex pe-5">
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-3">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item border p-4">
+                                <div class=" d-flex align-items-center">
+                                    <div class="">
+                                        <img src="img/testimonial-3.jpg" alt="">
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4 class="text-dark">Client Name</h4>
+                                        <p class="m-0 pb-3">Profession</p>
+                                        <div class="d-flex pe-5">
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-3">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item border p-4">
+                                <div class=" d-flex align-items-center">
+                                    <div class="">
+                                        <img src="img/testimonial-4.jpg" alt="">
+                                    </div>
+                                    <div class="ms-4">
+                                        <h4 class="text-dark">Client Name</h4>
+                                        <p class="m-0 pb-3">Profession</p>
+                                        <div class="d-flex pe-5">
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                            <i class="fas fa-star me-1 text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-3">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h3 id="CONTACT" style="color: #00ff84;">Get In Touch</h3>
+                    <h1 class="mt-3 text-light">Don't Be Shy,Let's Work Togather</h1>
+                </div>
+                <div class="contact-detail position-relative p-5">
+                    <div class="row g-1 justify-content-center">
+                        <!-- <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                                    <div class="d-flex bg-light p-3 rounded">
+                                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                            <i class="fas fa-map-marker-alt text-white"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="text-primary">Address</h4>
+                                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        <!-- <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                                    <div class="d-flex bg-light p-3 rounded">
+                                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                            <i class="fa fa-phone text-white"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="text-primary">Call Us</h4>
+                                            <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                                    <div class="d-flex bg-light p-3 rounded">
+                                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                            <i class="fa fa-envelope text-white"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h4 class="text-primary">Email Us</h4>
+                                            <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        <div class="row g-1">
+                            <!-- <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                                    <div class="p-1 h-100 rounded contact-map">
+                                       <div class="bg-dark p-3 ps-5">
+                                         <h2 class="text-light">Contact</h2><br>
+                                        <h3 style="color: #00ff84;" class="ms-3"><u>0000000000</u></h3><br><br>
+                                    
+                                        <h2 class="text-light">Email-id</h2><br>
+                                        <h3 style="color: #00ff84;" class="ms-3"><u>infocohortsolu@gmail.com</u></h3><br><br>
+                                        
+                                        <h2 class="text-light">Follow Us</h2><br>
+                                        <div class="row">
+                                            <div style="background-color: #00ff84;"><i class="fab fa-instagram text-primary"></i></div>
+                                            <div style="background-color: #00ff84;"><i class="fab fa-linkedin-in text-primary"></i></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> -->
+                            <div style="max-width: 100%;" class="col wow fadeIn text-center justify-content-center"
+                                data-wow-delay=".5s">
+                                <form action="/contact" method="post">
+                                    <div class="mx-md-5 p-md-5 rounded contact-form" id="CONTACTUS">
+                                        <div class="mb-4 d-md-flex">
+                                            <input type="text" name="name" class="form-control border-0 py-3 me-3"
+                                                placeholder="Your Name">
+                                            <br>
+                                            <input type="email" name="email" class="form-control border-0 py-3  me-3"
+                                                placeholder="Your Email">
+                                            <br>
+                                            <input type="text" name="contact" class="form-control border-0 py-3 "
+                                                placeholder="Your Contact No" maxlength="10">
+                                        </div>
+                                        <input type="text" class="form-control border-0 py-3 text-center"
+                                            placeholder="Select Project" readonly>
+                                        <div class="my-4 p-3 d-md-flex bg-light border-0 form-control"
+                                            style="justify-content: space-around;">
+                                            <div><input type="checkbox" id="webdevelop" name="webdevelop"
+                                                    value="webdevelop">
+                                                <label for="webdevelop">Web Development</label>
+                                            </div>
+                                            <div><input type="checkbox" id="ui/ux" name="ui/ux" value="ui/ux">
+                                                <label for="ui/ux">UI/UX</label>
+                                            </div>
+                                            <div><input type="checkbox" id="digita_marketing" name="digita_marketing"
+                                                    value="digita_marketing">
+                                                <label for="digita_marketing">Digital Marketing</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
+                                                name="message" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="text-start">
+                                            <button class="btn text-dark py-3 px-5" style="background-color: #00ff84;"
+                                                type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact End -->
+        </div>
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+            <div class="container pt-5">
+                <div class="row g-5" style="justify-content: space-around;">
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html">
+                            <h1 class="text-white fw-bold d-block">Info<span style="color:#00ff84;">Cohort</span> </h1>
+                        </a>
+                        <p class="mt-4 text-light">Ready to take your digital presence to the next level? Contact us
+                            today to discuss how we can collaborate and bring your vision to fruition.</p>
+                        <div class="d-flex hightech-link">
+                            <a href="https://www.instagram.com/infocohort/?igsh=MWM2eW16MmgycmptZw==" target="_blank"
+                                class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                    class="fab fa-instagram text-primary"></i></a>
+                            <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i
+                                    class="fab fa-linkedin-in text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="h3" style="color:#00ff84;">Short Link</a>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="#ABOUT" class="mb-2 text-white"><i
+                                    class="fas fa-angle-right text-secondary me-2"></i>About us</a>
+                            <a href="#CONTACT" class="mb-2 text-white"><i
+                                    class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
+                            <a href="#SERVICES" class="mb-2 text-white"><i
+                                    class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
+                            <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Testimonial</a> -->
+                            <!-- <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6">
+                                <a href="#" class="h3 text-secondary">Help Link</a>
+                                <div class="mt-4 d-flex flex-column help-link">
+                                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
+                                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                                </div>
+                            </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#CONTACT" class="h3" style="color:#00ff84;">Contact Us</a>
+                        <div class="text-white mt-4 d-flex flex-column contact-link">
+                            <!-- <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> 123 Street, New York, USA</a> -->
+                            <a href="//api.whatsapp.com/send?phone=919514260092&text='Hai brother,I want to collaborate my work with your Team This is right time to discuss about my requriement?"
+                                target="_blank" class="py-3 text-light border-bottom border-primary"><i
+                                    class="fas fa-phone-alt text-secondary me-2"></i>Whatsup Number</a>
+                            <a href="emailto:infocohortsoln@gmail.com"
+                                class="py-3 text-light border-bottom border-primary"><i
+                                    class="fas fa-envelope text-secondary me-2"></i>Send Email</a>
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-5">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        Copyrights 2024 <a href="#" style="color:#00ff84;"><i
+                                class="fas fa-copyright text-secondary me-2"></i><span class="text-light"></span>Info
+                            Cohort </a>| All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        <!-- <span class="text-light">Designed By<a href="https://htmlcodex.com" class="text-secondary">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <!-- <script src="lib/wow/wow.min.js"></script>
+                <script src="lib/easing/easing.min.js"></script>
+                <script src="lib/waypoints/waypoints.min.js"></script>
+                <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+
+    <!-- Template Javascript -->
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
